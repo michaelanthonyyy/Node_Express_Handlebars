@@ -1,6 +1,6 @@
 var connection = require("/connection.js");
 
-
+// helper functions
 function printQuestionMarks(num) {
     var arr = [];
     for (var i = 0; i < num; i++) {
@@ -22,6 +22,7 @@ function objToSql(ob) {
     }
     return arr.toString();
 }
+// end of helper functions
 
 var orm = {
     all: function (tableInput, cb) {
