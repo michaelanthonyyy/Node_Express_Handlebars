@@ -32,6 +32,7 @@ $(function() {
         function() {
           console.log("created new burger");
           location.reload();
+          
         }
       );
     });
