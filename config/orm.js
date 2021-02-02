@@ -27,11 +27,11 @@ function objToSql(ob) {
 var orm = {
     all: function(tableInput, cb) {
         var queryString = "SELECT * FROM " + tableInput + ";";
-        connection.query(queryString, function(err, result) {
+        connection.query(queryString, function(err, res) {
           if (err) {
             throw err;
           }
-          cb(result);
+          cb(res);
         });
       },
     create: function (table, cols, vals, cb) {
@@ -39,34 +39,34 @@ var orm = {
 
         console.log(queryString);
 
-        connection.query(queryString, vals, function (err, result) {
+        connection.query(queryString, vals, function (err, res) {
             if (err) {
                 throw err;
             }
 
-            cb(result);
+            cb(res);
         });
     },
     update: function (table, objColVals, condition, cb) {
         var queryString = "UPDATE " + table + " SET " + objToSql(objColVals) + " WHERE " + condition;
 
         console.log(queryString);
-        connection.query(queryString, function (err, result) {
+        connection.query(queryString, function (err, res) {
             if (err) {
                 throw err;
             }
 
-            cb(result);
+            cb(res);
         });
     },
     delete: function(table, condition, cb) {
         var queryString = "DELETE FROM " + table + " WHERE " + condition;
 
-        connection.query(queryString, function (err, result) {
+        connection.query(queryString, function (err, res) {
             if (err) {
                 throw err;
             }
-            cb(result);
+            cb(res);
         })
     }
 };
