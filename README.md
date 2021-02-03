@@ -8,7 +8,7 @@ Eat-Da-Burger is a web application allowing users to input burgers they'd like t
 
 ## Example 
 
-![Screenshot](Assets/images/screenshot.png)
+![Screenshot](/public/assets/images/screenshot.png)
 
 
 <br>
