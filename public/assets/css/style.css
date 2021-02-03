@@ -1,4 +1,12 @@
 .jumbotron {
     justify-content: center;
     text-align: center;
+    background-color: white;
+}
+
+.col-sm {
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+    border-style: solid;
 }

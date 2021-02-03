@@ -11,8 +11,6 @@ Eat-Da-Burger is a web application allowing users to input burgers they'd like t
 ![Screenshot](Assets/images/screenshot.png)
 
 
-![GIF](Assets/images/demo.gif)
-
 <br>
 <br>
 
